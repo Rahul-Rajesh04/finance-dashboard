@@ -18,7 +18,7 @@ const IncomeExpenseChart: React.FC = () => {
   const { transactions } = useFinance();
   const [timeRange, setTimeRange] = useState<'7days' | '30days'>('7days');
   
-  const chartData = generateChartData(transactions);
+const chartData = generateChartData(transactions);
 
   const CustomTooltip = ({ active, payload, label }: any) => {
     if (active && payload && payload.length) {
